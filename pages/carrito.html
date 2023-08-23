@@ -3,9 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/d9be5eed52.js" crossorigin="anonymous"></script>
+      <link href="/style.css" rel="stylesheet">
     <title>CARRITO</title>
 </head>
-<body>
-    
+<body class="fondo">
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a href="/index.html"> <img src="imagenes/iconos-06.png" alt="icono" class="icono">
+            </a>
+            <a class="navbar-brand text-reset" href="/index.html">ÓNIX.CEL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item-inicio">
+                  <a class="nav-link text-reset" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-reset" aria-current="page" href="sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item-contacto">
+                  <a class="nav-link text-reset" href="contacto.html">Contacto</a>
+                </li>
+                
+              </ul>
+  
+              <li class="d-flex">
+                <a href="carrito.html" class=" text-reset me-3">
+                  <i class="fa-solid fa-cart-shopping fa-xl" style="color:#ebebeb;"></i>
+                </a>
+              </li>  
+            </div>
+          </div>
+        </nav>
+  
+      </header>
+
+      <section class="container my-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-8">
+            <div class="card mb-4">
+              <div class="card-header py-4">
+                <h5 class="mb-0">Carrito - 2 artículos</h5>
+              </div>
+
+              <div class="card-body">
+
+                <div class="row py-3 mb-3">
+                  <div class="col-4 mb-1">
+                    <!-- imagen -->
+                    <div class="bg-image rounded">
+                      <img class="w-100" src="/imagenes/D_NQ_NP_702966-MLA43437261045_092020-O.webp" alt="Auriculares Vincha Time">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>Auriculares Vincha Time</strong></p>
+                    <p>Negro</p>
+                    <p>Vincha, con funda</p>
+                    <p class="precio">$4800</p>
+
+                    <button type="button" class="btn btn-danger btn-sm me-1 mb-2"><i class="fa-solid fa-trash-can"></i></button>
+
+                  </div>
+                  <div class="col-2">
+                    <input type="text" class="form-control text-center" placeholder="Cantidad" value="1" >
+                    <p class="text-center mt-4">
+                      <strong>$4800</strong>
+                    </p>
+                  </div>
+
+                </div>
+
+                <hr>
+                
+                <!-- ROW -->
+                <div class="row py-3 mb-3">
+                  <div class="col-4 mb-1">
+                    <!-- imagen -->
+                    <div class="bg-image rounded">
+                      <img class="w-100" src="/imagenes/D_NQ_NP_955984-MLA70233288776_072023-O.webp" alt="Auriculares Samsung">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>Auriculares Samsung</strong></p>
+                    <p>Blanco</p>
+                    <p>Sin gomita</p>
+                    <p class="precio">$800</p>
+
+                    <button type="button" class="btn btn-danger btn-sm me-1 mb-2"><i class="fa-solid fa-trash-can"></i></button>
+
+                  </div>
+                  <div class="col-2">
+                    <input type="text" class="form-control text-center" placeholder="Cantidad" value="1" >
+                    <p class="text-center mt-4">
+                      <strong>$800</strong>
+                    </p>
+                  </div>
+
+                </div>              
+                
+              </div>
+
+            </div>
+
+
+            <div class="card mb-4">
+              <div class="card-body tarjetas">
+                <p><strong>Métodos de pago aceptados</strong></p>
+                <img src="/imagenes/amex.svg" alt="American Express" class="tarjetas me-2">
+                <img src="/imagenes/master.svg" alt="Mastercard" class="tarjetas me-2">
+                <img src="/imagenes/visa.svg" alt="Visa" class="tarjetas me-2">
+                <img src="/imagenes/paypal.svg" alt="PayPal" class="tarjetas me-2">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-4">
+            <div class="card mb-4">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Resumen carrito</h5>
+              </div>
+              <div class="card-body">
+                <ul class="fondo2 list-group list-group-flush">
+                  <li class="fondo2 list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Productos
+                    <span>$5600</span>
+                  </li>
+                  <li class="fondo2 list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Envío
+                    <span>Gratis</span>
+                  </li>
+                  
+                  <li class="fondo2 list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <div>
+                      <strong>Total de la compra</strong>
+                      <strong>(IVA Incluido)</strong>
+                    </div>
+                    <span><strong>$5600</strong></span>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn btn-success btn-lg btn-block mt-4">Ir a pagar</button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+
+      </section>
+      <script type="module" src="/main.js"></script>
 </body>
+<footer>
+
+  <h6 class="datos-footer my-6"> Based in Buenos Aires since 2021</h6>
+  <p>Encontranos en redes</p>
+  <div class=" mb-1">
+    <div class="nosotros-iconos ">
+      <ul>
+        <li><a href="https://www.facebook.com/onix.cel.39/"><i class="fa-brands fa-facebook-square fa-xl fb"></i></a></li>
+        <li><a href="https://www.instagram.com/onix_cel/"><i class="fa-brands fa-instagram-square fa-xl"></i></a></li>
+        <li><a href="mailto:trini@gmail.com"><i class="fa fa-envelope-square fa-xl"></i></a></li>
+        <li><a href="https://www.tiktok.com/@onix.cel"><i class="fa-brands fa-tiktok fa-xl"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+    </footer>
 </html>

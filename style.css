@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+
+
+
+
+.navbar{
+  color: #fdfdfd;
+  padding: 5px;
+}
+header{
+  background-color: #573280;
+  color: #fdfdfd;
+  font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
+  padding: 5px;
+  
+  
+}
+.nav-item, .nav-item-contacto, .nav-item-inicio{
+  padding: 0px 0px 5px 20px;
+}
+.nav-item-carrito {
+    margin-left: auto;
+}
+.me-auto {
+    margin-right: auto;
+  }
+.icono{
+  width: 50px; 
+  height: 40px;
+  padding-right: 10px;
+}
+
+   /* fin nav */
+   
+  section, form{
+    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+  }
+  li.precio{
+     font-weight: bold;
+  }
+  div.card-body, .card-title, .list-unstyled, div.card, ul.list-group {
+    background-color: #E072A4;
+    border-color: #E072A4;
+
+  }
+
+  img.tarjetas {
+    width: 65px;
+  }
+  .card-img-top{
+    width: 200px 200px;
+  }
+
+
+  .carousel-item {
+    margin-left: 250px;
+  }
+  .nosotros-iconos {
+    margin: 3em 0;
+}
+
+.nosotros-iconos i {
+    margin-right: 0.8em;
+    padding: 0;
+    color: #323232;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.nosotros-iconos li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nosotros-iconos i:hover {
+    color: rgb(108, 12, 198);
+    transition: all .6s;
+}
+
+.nosotros-iconos i.fb:hover {
+    color: #1877f2;
+    transition: all .6s;
+}
+
+img.img-fluid{
+  height: 400px;
+  padding: 45px;
+}
+  
+  .datos-footer{
+    margin-right: 0%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  h6{
+    text-align: center;
+  }
+  h1 {
+    font-size: 7.5rem;
+    text-shadow: #573280;
+  }
+ .carousel-item{
+  width: 100%;
+  height: 400px;
+ } 
+.card{
+  border-radius: 49px;
+  background: #E072A4;
+  box-shadow:  -4px -4px 9px #453f4237,
+  4px 4px 9px #7b6f7433;
+}
+
+.card-img-top{
+  width: 100%; 
+  height: 300px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.card-button{
+  color: #323232;
+
+}
+.btn, .btn-outline-primary:hover {
+  color: rgb(227, 225, 229);
+  transition: all .6s;
+}
+
+/*formulario de contacto*/
+
+
+section.row{
+  
+  justify-content: center;
+}
+footer {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  padding: 15px;
+  
+}
+
+.fondo2{
+  background-color: #E072A4;
+}
+.fondo{
+  background-color: #D2D7DF;
+
+}
+main.formulario{
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+margin-top: 5%;
+  margin-left: 35%;
+  padding: 30px 35px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 440px;
+
+}
+.input-group{
+  display: flex;
+flex-direction: column;
+text-align: left;
+}
+label{
+  color: #573280;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding:  3px; ;
+}
+textarea, input {
+  padding: 17px 25px;
+  border-radius: 25px 25px;
+  margin-bottom: 20px;
+  border: 2px solid #56328041;
+  outline: none;
+
+}
