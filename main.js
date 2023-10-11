@@ -24,16 +24,18 @@ const carritoCompra = document.getElementById('lista-compra')
 cargarEventos()
 
 function cargarEventos() {
-  const ruta = String(location.href)
+  const ruta = String(location.pathname)
   console.log(ruta)
 
   if (ruta.includes('carrito.html')) {
     esCarrito()
-  } else if (ruta.includes('index.html')) {
+  } else if (ruta.includes('index.html') || ruta == '/') {
     esIndex()
   }
+  else if (ruta.includes('contacto.html')) {
+    esContacto() 
 }
-
+  }
 function esIndex() {
   console.log('No estoy en carrito!')
   const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
@@ -105,12 +107,13 @@ function cambiarDarkMode() {
   body.classList.toggle('dark')
 }
 
-const form = document.querySelector('#formContacto');
+function esContacto() {
+  const form = document.querySelector('#formContacto');
 const modal = document.querySelector('#modalGracias');
 const closeModal = document.querySelector('.modal-close');
 
 form.addEventListener('submit', (e)=>{
-    console.log('Submit form!!')
+   console.log('Submit form!!')
     e.preventDefault();
     modal.classList.add('modal--show');
 });
@@ -119,3 +122,4 @@ closeModal.addEventListener('click', (e)=>{
     e.preventDefault();
     modal.classList.remove('modal--show');
 });
+}
